@@ -40,7 +40,7 @@ public class BasicCalculatorTest {
     }
 
     @DisplayName("Testing several rests")
-    @ParameterizedTest(name = "{1} - {1} = {0}")
+    @ParameterizedTest(name = "{0} - {1} = {2}")
     @CsvSource({
             "1,    1,   0",
             "2,    1,   1",

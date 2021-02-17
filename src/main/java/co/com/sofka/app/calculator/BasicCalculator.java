@@ -26,6 +26,9 @@ public class BasicCalculator {
         try{
             logger.info( "Summing {} / {}", number1, number2 );
             return number1 / number2;
-        } catch (ArithmeticException e){ return Long.parseLong("0");}
+        } catch (ArithmeticException e){
+            System.out.println("La división entre 0 no está definida, por eso hemos retornado un valor de 0");
+            return Long.parseLong("0");
+        }
     }
 }
